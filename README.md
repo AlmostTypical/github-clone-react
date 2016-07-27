@@ -2,7 +2,7 @@
 
 In this sprint we will learn about React Router, a library for React that allows us to route our users to different parts of our application. We will be implementing a "GitHub visualiser", a clone of the GitHub website that displays the Northcoders organisation, its members, members' profiles and their repos, all in different routes.
 
-We will be getting the data from our own custom API server because GitHub limits API requests to 60 an hour, which is not ideal for development. You read the **neat** reference for the API [here](https://northcoders-github-api.herokuapp.com/).
+We will be getting the data from our own custom API server because GitHub limits API requests to 60 an hour, which is not ideal for development. You can read the **neat** reference for the API [here](https://northcoders-github-api.herokuapp.com/).
 
 ### Objectives
 
