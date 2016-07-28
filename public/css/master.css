@@ -1,0 +1,25 @@
+.navbar,
+.nav {
+  background: #f5f5f5;
+}
+
+.navbar {
+  border-bottom: 1px solid #e5e5e5;
+}
+
+.control:not(:last-child) {
+  margin-bottom: 0;
+}
+
+.button.is-info,
+.button.is-info.is-active,
+.button.is-info:focus,
+.button.is-info:hover {
+  background: #fff;
+  border: 1px solid #ddd;
+  color: #767676;
+}
+
+.nav-right .icon .fa {
+  font-size: 15px;
+}
