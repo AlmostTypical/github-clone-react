@@ -20,7 +20,6 @@ var Header = React.createClass({
       })
   },
   processHeaderData: function (headData) {
-    console.log(headData);
     this.setState({loaded: true, name: headData.name, avatar: headData.avatar_url, location: headData.location, url: headData.blog, email: headData.email});
   },
   render: function () {

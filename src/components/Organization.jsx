@@ -1,6 +1,7 @@
 const React = require('react');
 const axios = require('axios');
 const Header = require('./Header');
+const Repos = require('./Repos');
 
 
 var Organization = React.createClass({
@@ -8,8 +9,8 @@ var Organization = React.createClass({
     return (
       <div className="container">
         <Header />
+        <Repos />
       </div>
-
     );
   }
 });
