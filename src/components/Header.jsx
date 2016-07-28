@@ -35,7 +35,7 @@ var Header = React.createClass({
       );
     }
     return (
-      <div className="box">
+      <div className="header-data box">
         <article className="media">
           <div className="media-left">
             <figure className="image is-64x64">
