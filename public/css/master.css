@@ -141,3 +141,20 @@ thead tr {
 .profile-wrapper {
   margin-top: 20px;
 }
+
+.peopleImage img {
+  float: left;
+  margin: 1px !important
+}
+
+.peopleImage figure {
+  margin: 1px !important;
+
+}
+
+.peopleCard {
+  overflow: hidden;
+  width: 280px;
+  padding: 15px;
+  border: 1px solid #ddd;
+}

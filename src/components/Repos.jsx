@@ -1,6 +1,7 @@
 const React = require('react');
 const axios = require('axios');
 const Repo = require('./Repo');
+const PeopleBox = require('./PeopleBox');
 
 const Repos = React.createClass({
   getInitialState: function () {
@@ -42,7 +43,14 @@ const Repos = React.createClass({
     return (
         <section className="repos-wrapper">
           <div className="container">
-            {repoNodes}
+            <div className="columns">
+              <div className="column is-two-thirds">
+                {repoNodes}
+              </div>
+              <div className="column is-one-third">
+                <PeopleBox />
+              </div>
+            </div>
           </div>
         </section>
 

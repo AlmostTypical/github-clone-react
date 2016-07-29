@@ -1,4 +1,5 @@
 const React = require('react');
+const moment = require('moment');
 
 const MemberRepo = function (props) {
   return (
@@ -13,7 +14,7 @@ const MemberRepo = function (props) {
               <br />
               <span className="repoBlock">{props.description}</span>
               <br />
-              <span className="repoBlock">{props.dateUpdated}</span>
+              <span className="repoBlock">{moment(props.dateUpdated).format("MMM Do YY")}</span>
             </div>
           </div>
         </div>
