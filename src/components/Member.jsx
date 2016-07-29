@@ -1,9 +1,10 @@
 const React = require('react');
+const Link = require('react-router').Link;
 
 const Member = function (props) {
   return (
       <tr>
-        <td>
+        <td className="username">
           <figure className="image is-48x48">
             <img src={props.profileImage}/>
           </figure>

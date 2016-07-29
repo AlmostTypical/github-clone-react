@@ -2,6 +2,9 @@
 .nav {
   background: #f5f5f5;
 }
+.active {
+  border-bottom: 3px solid red;
+}
 
 .navbar {
   border-bottom: 1px solid #e5e5e5;
@@ -47,4 +50,26 @@
 
 .repos-wrapper {
   background: #fff;
+}
+
+.image.is-48x48 {
+  float: left;
+  margin-right: 1em;
+}
+
+td.username {
+  font-weight: bold;
+}
+
+.people {
+  background: #fff;
+}
+
+thead tr {
+  background: #f8f8f8;
+  color: #767676;
+}
+
+.people-table {
+  border: 1px solid #eee;
 }

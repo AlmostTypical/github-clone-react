@@ -1,6 +1,6 @@
 const React = require('react');
 const axios = require('axios');
-
+const IndexLink = require('react-router').IndexLink;
 const NavLink = require('./NavLink');
 
 const Navbar = require('./Navbar');
@@ -16,11 +16,10 @@ var Organization = React.createClass({
         <Header />
         <div className="container">
           <ul>
-            <li><NavLink to='/repos'>Repositories</NavLink></li>
+            <li><IndexLink to='/' activeClassName="active">Repositories</IndexLink></li>
             <li><NavLink to='/people'>People</NavLink></li>
           </ul>
         </div>
-
         {this.props.children}
       </div>
     );

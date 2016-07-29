@@ -8,22 +8,11 @@ const Organization = require('./components/Organization');
 const Repos = require('./components/Repos');
 const People = require('./components/People');
 
-// const App = React.createClass({
-//   render: function () {
-//     return (
-//       <div>
-//         <Navbar />
-//         <Organization />
-//       </div>
-//     );
-//   }
-// });
 
 ReactDOM.render(
   <Router history={hashHistory}>
     <Route path='/' component={Organization}>
       <IndexRoute component={Repos} />
-      <Route path='/repos' component={Repos} />
       <Route path='/people' component={People} />
     </Route>
   </Router>

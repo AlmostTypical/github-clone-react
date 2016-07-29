@@ -37,24 +37,26 @@ var People = React.createClass({
       />
     });
     return (
-      <div className="container">
-        <section className="people-wrapper">
-          <div className="container">
-            <table className="table">
-              <thead>
-              <tr>
-                <th>15 people in the Northcoders organisation</th>
-                <th> </th>
-                <th> </th>
-                <th>Filter by organisation role</th>
-                </tr>
-              </thead>
-              <tbody>
-                {memberNodes}
-              </tbody>
-            </table>
-          </div>
-        </section>
+      <div className="people">
+        <div className="container">
+          <section className="people-wrapper">
+            <div className="container">
+              <table className="table people-table">
+                <thead>
+                <tr>
+                  <th>15 people in the Northcoders organisation</th>
+                  <th> </th>
+                  <th> </th>
+                  <th>Filter by organisation role</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  {memberNodes}
+                </tbody>
+              </table>
+            </div>
+          </section>
+        </div>
       </div>
 
     );
