@@ -73,3 +73,71 @@ thead tr {
 .people-table {
   border: 1px solid #eee;
 }
+
+.card {
+  width: 230px;
+  background: none;
+  box-shadow: none;
+}
+
+.card img {
+  border-radius: 6px;
+}
+
+.profile-info .card {
+  margin: 0 auto;
+}
+
+.info-item {
+  border-top: 1px solid #eee;
+  border-bottom: 1px solid #eee;
+
+  padding: 1em 0;
+
+  font-size: 13px;
+}
+
+.personal-info i {
+  margin-right: 10px;
+  font-size: 13px;
+  margin-top: 2px;
+}
+
+.followers-following {
+  overflow: hidden;
+  padding: 12px 0;
+}
+
+.followers-following a {
+  float: left;
+  text-align: center;
+  font-size: 28px;
+  font-weight: 600;
+  color: #4078c0;
+  width: 33.33%;
+}
+
+.followers-following span {
+  display: block;
+  text-decoration: none;
+  color: #767676;
+  font-size: 11px;
+  font-weight: normal;
+}
+
+.organizations {
+  overflow: hidden;
+  clear: both;
+
+}
+
+.organizations p {
+  font-size: 20px;
+  font-weight: 600 !important;
+  margin-top: 1em;
+  margin-bottom: 0 !important;
+}
+
+.profile-wrapper {
+  margin-top: 20px;
+}

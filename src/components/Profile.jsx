@@ -1,6 +1,10 @@
 const React = require('react');
 const Navbar = require('./Navbar');
 const axios = require('axios');
+const moment = require('moment');
+
+const ProfileMember = require('./ProfileMember');
+const ProfileMemberData = require('./ProfileMemberData');
 
 var Profile = React.createClass({
   getInitialState: function () {
@@ -24,37 +28,20 @@ var Profile = React.createClass({
   },
   processMemberData: function (memberData) {
     this.setState({data: memberData});
-    console.log(this.state.data)
   },
   render: function () {
     return (
       <div>
         <Navbar />
-        <div className="container">
-          <span>
-          {this.state.data.login}
-          </span>
-          <span>
-          <img src={this.state.data.avatar_url}/>
-            </span>
-          <span>
-            {this.state.data.company}
-            </span>
-          <span>
-          {this.state.data.blog}
-          </span>
-          <span>
-          {this.state.data.location}
-          </span>
-          <span>
-          {this.state.data.created_at}
-          </span>
-          <span>
-          {this.state.data.followers}
-          </span>
-          <span>
-          {this.state.data.following}
-          </span>
+        <div className="container profile-wrapper">
+          <div className="columns">
+            <div className="column is-one-third">
+              <ProfileMember data={this.state.data} username={this.props.params.username}/>
+            </div>
+            <div className="column is-two-thirds">
+              <ProfileMemberData />
+            </div>
+          </div>
         </div>
       </div>
     );
