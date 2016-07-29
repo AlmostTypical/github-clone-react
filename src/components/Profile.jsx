@@ -39,7 +39,7 @@ var Profile = React.createClass({
               <ProfileMember data={this.state.data} username={this.props.params.username}/>
             </div>
             <div className="column is-two-thirds">
-              <ProfileMemberData />
+              <ProfileMemberData user={this.props.params.username}/>
             </div>
           </div>
         </div>
