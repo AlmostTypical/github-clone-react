@@ -8,7 +8,7 @@ const Member = function (props) {
           <figure className="image is-48x48">
             <img src={props.profileImage}/>
           </figure>
-          {props.name}
+          <Link to={"/users/" + props.name}>{props.name}</Link>
         </td>
         <td> </td>
         <td> </td>
