@@ -1,12 +1,12 @@
 const React = require('react');
 const axios = require('axios');
 const Repo = require('./Repo');
-const relativeDate = require('relative-date');
 
 const Repos = React.createClass({
   getInitialState: function () {
     return {
-      loaded: false
+      loaded: false,
+      data: []
     }
   },
   componentDidMount: function () {
@@ -17,24 +17,13 @@ const Repos = React.createClass({
       .then(function (response){
         let repoData = response.data;
         this.processRepoData(repoData);
-      }.bind(this)).catch(function(error) {
+      }.bind(this))
+      .catch(function(error) {
       console.log(error);
     })
   },
   processRepoData: function (repoData) {
     this.setState({data: repoData});
-  },
-  determineDateFormat: function (date) {
-    let currentDate = Date.now();
-    let updateDate = Date.parse(date);
-    if (currentDate - updateDate < 86400000) {
-      updateDate = relativeDate(updateDate);
-      return updateDate
-    } else if (currentDate - updateDate < 31556952000) {
-      return date.match(/\w\w\w\W\d+/)[0]
-    } else {
-      return date.match(/\w\w\w\W\d+/)[0] + ' ' + date.slice(date.length - 4)
-    }
   },
   render: function () {
     var repoNodes = this.state.data.map(function (repo, index) {
@@ -51,9 +40,13 @@ const Repos = React.createClass({
       />
     });
     return (
-      <div className="container">
-        {repoNodes}
-      </div>
+        <section className="repos-wrapper">
+          <div className="container">
+            {repoNodes}
+          </div>
+        </section>
+
+
     )
   }
 });

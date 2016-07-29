@@ -38,3 +38,13 @@
   margin-right: .3em;
   padding-top: 2px;
 }
+
+.repo article {
+  padding: 2em 1em;
+  background: #fff;
+  border-bottom: 1px solid #eee;
+}
+
+.repos-wrapper {
+  background: #fff;
+}

@@ -1,10 +1,8 @@
 const React = require('react');
-const relativeDate = require('relative-date');
 
 const Repo = function (props) {
- console.log(props.dateUpdated);
   return (
-    <div>
+    <div className="repo">
       <article className="media">
         <div className="media-left">
           <div className="media-content">
