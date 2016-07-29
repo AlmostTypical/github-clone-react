@@ -3,6 +3,8 @@ const axios = require('axios');
 const Repo = require('./Repo');
 const PeopleBox = require('./PeopleBox');
 
+const moment = require('moment');
+
 const Repos = React.createClass({
   getInitialState: function () {
     return {

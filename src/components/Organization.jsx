@@ -7,20 +7,26 @@ const Navbar = require('./Navbar');
 const Header = require('./Header');
 const Repos = require('./Repos');
 const People = require('./People');
+const Footer = require('./Footer');
 
 var Organization = React.createClass({
   render: function () {
     return (
-      <div >
+      <div className="app-wrapper">
         <Navbar />
         <Header />
-        <div className="container">
-          <ul>
-            <li><IndexLink to='/' activeClassName="active">Repositories</IndexLink></li>
-            <li><NavLink to='/people'>People</NavLink></li>
-          </ul>
+        <div className="tabs-wrapper">
+          <div className="container">
+            <div className="tabs">
+              <ul>
+                <li className="tab-nav"><IndexLink to='/' activeClassName="active">Repositories</IndexLink></li>
+                <li className="tab-nav"><NavLink to='/people'>People</NavLink></li>
+              </ul>
+            </div>
+          </div>
         </div>
         {this.props.children}
+        <Footer />
       </div>
     );
   }

@@ -38,10 +38,12 @@ const PeopleBox = React.createClass({
     });
     return (
       <div className="card peopleCard">
-        <Link to="/People">
-        <h1 className="media-left">People</h1>
-        <h1 className="media-right">15 ></h1>
-        </Link>
+        <div className="people-card-header">
+          <Link to="/People">
+            <p className="title is-4">People</p>
+            <p className="media-right">15 ></p>
+          </Link>
+        </div>
         {peopleNodes}
         </div>
     )

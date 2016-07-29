@@ -34,40 +34,43 @@ var Header = React.createClass({
       );
     }
     return (
-      <div className="container">
-        <div className="header-data box">
-          <article className="media">
-            <div className="media-left">
-              <figure className="image is-128x128">
-                <img src={this.state.avatar} alt="Avatar" />
-              </figure>
-            </div>
-            <div className="media-content">
-              <div className="content">
-                <h1>
-                  <strong>{this.state.name}</strong>
-                </h1>
+      <div className="header-wrapper">
+        <div className="container">
+          <div className="header-data box">
+            <article className="media">
+              <div className="media-left">
+                <figure className="image is-128x128">
+                  <img src={this.state.avatar} alt="Avatar" />
+                </figure>
               </div>
-              <nav className="level">
-                <div className="level-left">
-                  <p className="level-item">
-                    <span className="icon is-small"><i className="fa fa-map-marker"></i></span>
-                    {this.state.location}
-                  </p>
-                  <a className="level-item" href={this.state.url} target="_blank">
-                    <span className="icon is-small"><i className="fa fa-link"></i></span>
-                    {this.state.url}
-                  </a>
-                  <a className="level-item">
-                    <span className="icon is-small"><i className="fa fa-envelope"></i></span>
-                    {this.state.email}
-                  </a>
+              <div className="media-content">
+                <div className="content">
+                  <h1>
+                    <strong>{this.state.name}</strong>
+                  </h1>
                 </div>
-              </nav>
-            </div>
-          </article>
+                <nav className="level">
+                  <div className="level-left">
+                    <p className="level-item">
+                      <span className="icon is-small"><i className="fa fa-map-marker"></i></span>
+                      {this.state.location}
+                    </p>
+                    <a className="level-item" href={this.state.url} target="_blank">
+                      <span className="icon is-small"><i className="fa fa-link"></i></span>
+                      {this.state.url}
+                    </a>
+                    <a className="level-item">
+                      <span className="icon is-small"><i className="fa fa-envelope"></i></span>
+                      {this.state.email}
+                    </a>
+                  </div>
+                </nav>
+              </div>
+            </article>
+          </div>
         </div>
       </div>
+
 
     );
   }

@@ -2,6 +2,7 @@ const React = require('react');
 const Navbar = require('./Navbar');
 const axios = require('axios');
 const moment = require('moment');
+const Footer = require('./Footer');
 
 const ProfileMember = require('./ProfileMember');
 const ProfileMemberData = require('./ProfileMemberData');
@@ -43,6 +44,7 @@ var Profile = React.createClass({
             </div>
           </div>
         </div>
+        <Footer />
       </div>
     );
   }
